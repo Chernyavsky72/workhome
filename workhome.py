@@ -129,10 +129,21 @@ student1.rate_lecturer(lecturer2, 'Git', 10)
 student2.rate_lecturer(lecturer1, 'Git', 8)
 
 # Информация о студентах, лекторах и проверяющих
-print(f'________\nСтуденты:\n\n{student1}\n\n{student2}')
-print(f'\n________\nЛекторы:\n\n{lecturer1}\n\n{lecturer2}')
-print(f'\n________\nПроверяющие:\n\n{reviewer1}\n\n{reviewer2}\n')
+print(f'******************\nСтуденты:\n\n{student1}\n\n{student2}')
+print(f'\n******************\nЛекторы:\n\n{lecturer1}\n\n{lecturer2}')
+print(f'\n******************\nПроверяющие:\n\n{reviewer1}\n\n{reviewer2}\n')
 
 # Вывод оценок
 print(average_grade_for_students([student1, student2], 'Python'))
 print(average_grade_for_lecturers([lecturer1, lecturer2], 'Git'))
+
+
+if lecturer1 > lecturer2:
+    print(f'\n\nЛектор {lecturer1.name} {lecturer1.surname} по баллам лучше лектора {lecturer2.name} {lecturer2.surname}')
+else:
+    print(f'Лектор {lecturer1.name} {lecturer1.surname} не лучше лектора {lecturer2.name} {lecturer2.surname}')
+
+if student1 > student2:
+    print(f'Студент {student1.name} {student1.surname} по баллам лучше студента {student2.name} {student2.surname}')
+else:
+    print(f'Студент {student1.name} {student1.surname} не лучше студента {student2.name} {student2.surname}\n')
