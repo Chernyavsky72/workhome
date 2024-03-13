@@ -131,7 +131,7 @@ student2.rate_lecturer(lecturer1, 'Git', 8)
 # Информация о студентах, лекторах и проверяющих
 print(f'________\nСтуденты:\n\n{student1}\n\n{student2}')
 print(f'\n________\nЛекторы:\n\n{lecturer1}\n\n{lecturer2}')
-print(f'\n________\nПроверяющие:\n\n{reviewer1}\n\n{reviewer2}')
+print(f'\n________\nПроверяющие:\n\n{reviewer1}\n\n{reviewer2}\n')
 
 # Вывод оценок
 print(average_grade_for_students([student1, student2], 'Python'))
